@@ -27,4 +27,21 @@ public class Sort {
     //assert isSorted(array);
   }
 
+  //find the k-th smallest element in the array
+  // this method uses quick sort idea
+  public static Comparable select(Comparable[] a, int k) {
+    int lo = 0, hi = a.length - 1;
+    while(hi > lo) {
+      int j = QuickSort.partition(a, lo, hi);
+      if (j == k) return a[k];
+      else if (j > k) {
+        hi = j - 1;
+      }
+      else {
+        lo = j + 1;
+      }
+    }
+    return a[k];
+  }
+
 }

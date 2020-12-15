@@ -15,7 +15,7 @@ public class QuickSort {
     sort(a, j+1, hi);
   }
 
-  private static int partition(Comparable[] a, int lo, int hi) {
+  public static int partition(Comparable[] a, int lo, int hi) {
     int i = lo, j = hi + 1;
     Comparable v = a[lo];
     while(true) {
