@@ -1,4 +1,4 @@
-package sort;
+package Sort;
 
 public class InsertionSort extends Sort {
   public void sort(Comparable[] a) {

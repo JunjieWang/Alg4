@@ -1,6 +1,4 @@
-package sort;
-
-import java.util.Arrays;
+package Sort;
 
 /**
  * @author jwang 12/13/20
